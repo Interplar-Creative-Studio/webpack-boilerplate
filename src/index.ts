@@ -1,5 +1,6 @@
 // Test import of a module
 import { example } from './scripts/example'
+import './scripts/global.d'
 
 // Test import of an asset
 // @ts-ignore

@@ -6,7 +6,8 @@ const paths = require('./paths')
 
 module.exports = {
   // Where webpack looks to start building the bundle
-  entry: [paths.src + '/index.ts'],
+  // entry: [paths.src + '/index.ts'],
+  entry: [paths.src + '/scripts/App.ts'],
 
   // Where webpack outputs the assets and bundles
   output: {
@@ -47,6 +48,8 @@ module.exports = {
   // Determine how modules within the project are treated
   module: {
     rules: [
+      { test: /\.(glsl|vs|fs)$/, loader: 'ts-shader-loader' },
+
       // JavaScript: Use Babel to transpile JavaScript files
       { test: /\.js$/, exclude: /node_modules/, use: ['babel-loader'] },
 
