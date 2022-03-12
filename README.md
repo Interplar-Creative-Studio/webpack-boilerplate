@@ -8,7 +8,7 @@
 - Mocha
 - ThreeJS
 
-## Установка
+## `Установка`
 
 Клонируем репозиторий и устанавливаем зависимости
 
@@ -16,25 +16,31 @@
 npm i
 ```
 
-## Использование
+## `Использование`
 
 ### Локальный сервер
 
 ```bash
 npm run start:dev
 ```
-Запускается сам, настройки из конфига для разработки.
+`Запускается сам`, настройки из конфига для разработки.
 
 ```bash
 npm run start:prod
 ```
-Сам не запускается, надо самому. Настройки из конфига для продакшена.
+Сам `не запускается`, надо самому. Настройки из конфига для продакшена.
 
 ### Билд
 
 ```bash
-npm run build
+npm run build:dev
 ```
+Билд `без` прохождения тестов
+
+```bash
+npm run build:dev
+```
+Билд `с` прохождением тестов
 
 > Важно: Установите [http-server](https://www.npmjs.com/package/http-server) как глобальную зависимость, чтобы сделать небольшой сервер.
 
@@ -48,7 +54,7 @@ npm i -g http-server
 cd dist && http-server
 ```
 
-## Зависимости
+## `Зависимости`
 
 ### webpack
 
@@ -90,6 +96,6 @@ cd dist && http-server
   - - [`prettier`](https://github.com/prettier/prettier) - Dependency for `prettier-webpack-plugin` plugin
 - [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Throw exceptions for import/export in webpack -->
 
-## Лицензия
+## `Лицензия`
 
 Проект с открытым исходным кодом и доступен под лицензией [MIT License](LICENSE).
