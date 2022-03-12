@@ -40,14 +40,7 @@ You can view the deploy by creating a server in `dist`.
 cd dist && http-server
 ```
 
-## Features
-
-- [webpack](https://webpack.js.org/)
-- [Babel](https://babeljs.io/)
-- [Sass](https://sass-lang.com/)
-- [PostCSS](https://postcss.org/)
-
-## Dependencies
+<!-- ## Dependencies
 
 ### webpack
 
@@ -86,11 +79,7 @@ cd dist && http-server
 - [`eslint`](https://github.com/eslint/eslint) - Enforce styleguide across application
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Implement prettier rules
   - - [`prettier`](https://github.com/prettier/prettier) - Dependency for `prettier-webpack-plugin` plugin
-- [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Throw exceptions for import/export in webpack
-
-## Author
-
-- [Tania Rascia](https://www.taniarascia.com)
+- [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Throw exceptions for import/export in webpack -->
 
 ## License
 
