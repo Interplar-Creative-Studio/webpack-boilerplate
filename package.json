@@ -6,9 +6,9 @@
   "author": "Tania Rascia",
   "license": "MIT",
   "scripts": {
-    "start:dev": "export NODE_OPTIONS=--openssl-legacy-provider; cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "start:prod": "export NODE_OPTIONS=--openssl-legacy-provider; cross-env NODE_ENV=production webpack serve --open --config config/webpack.prod.js",
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider; cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "start:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "start:prod": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack serve --open --config config/webpack.prod.js",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --config config/webpack.prod.js",
     "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'",
     "lint": "eslint 'src/**/*.ts' || true",
     "prettify": "prettier --write 'src/**/*.ts'"
