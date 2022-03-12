@@ -1,62 +1,70 @@
-# 📦 webpack Boilerplate
+# 📦 Шаблон Webpack5
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Sensible webpack 5 boilerplate using Babel, PostCSS and Sass.
+Шаблон webpack 5-ой версии с использованием таких технологий как:
+- TypeScript
+- SCSS
+- Mocha
+- ThreeJS
 
-## Installation
+## Установка
 
-Clone this repo and npm install.
+Клонируем репозиторий и устанавливаем зависимости
 
 ```bash
 npm i
 ```
 
-## Usage
+## Использование
 
-### Development server
+### Локальный сервер
 
 ```bash
-npm start
+npm run start:dev
 ```
+Запускается сам, настройки из конфига для разработки.
 
-You can view the development server at `localhost:8080`.
+```bash
+npm run start:prod
+```
+Сам не запускается, надо самому. Настройки из конфига для продакшена.
 
-### Production build
+### Билд
 
 ```bash
 npm run build
 ```
 
-> Note: Install [http-server](https://www.npmjs.com/package/http-server) globally to deploy a simple server.
+> Важно: Установите [http-server](https://www.npmjs.com/package/http-server) как глобальную зависимость, чтобы сделать небольшой сервер.
 
 ```bash
 npm i -g http-server
 ```
 
-You can view the deploy by creating a server in `dist`.
+Теперь вы можете посмотреть свои труды из папки `dist`. Для этого перейдите в папку с билдом и запустите сервер
 
 ```bash
 cd dist && http-server
 ```
 
-<!-- ## Dependencies
+## Зависимости
 
 ### webpack
 
-- [`webpack`](https://github.com/webpack/webpack) - Module and asset bundler.
-- [`webpack-cli`](https://github.com/webpack/webpack-cli) - Command line interface for webpack
-- [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) - Development server for webpack
-- [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Simplify development/production configuration
-- [`cross-env`](https://github.com/kentcdodds/cross-env) - Cross platform configuration
+- [`webpack`](https://github.com/webpack/webpack) - Упаковщик
+- [`webpack-cli`](https://github.com/webpack/webpack-cli) - Коммандный интерфейс для Webpack
+- [`webpack-dev-server`](https://github.com/webpack/webpack-dev-server) - Локальный сервер для Webpack
+- [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Упрощенное создание конфигов для разработки/продакшена
+- [`cross-env`](https://github.com/kentcdodds/cross-env) - Кросс-платформенная конфигурация
 
-### Babel
+<!-- ### Babel
 
 - [`@babel/core`](https://www.npmjs.com/package/@babel/core) - Transpile ES6+ to backwards compatible JavaScript
 - [`@babel/plugin-proposal-class-properties`](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) - Use properties directly on a class (an example Babel config)
-- [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel
+- [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel -->
 
-### Loaders
+<!-- ### Loaders
 
 - [`babel-loader`](https://webpack.js.org/loaders/babel-loader/) - Transpile files with Babel and webpack
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
@@ -65,22 +73,23 @@ cd dist && http-server
   - [`postcss-preset-env`](https://www.npmjs.com/package/postcss-preset-env) - Sensible defaults for PostCSS
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
+-->
 
-### Plugins
+### Плагины
 
-- [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin) - Remove/clean build folders
-- [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) - Copy files to build directory
-- [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) - Generate HTML files from template
-- [`mini-css-extract-plugin`](https://github.com/webpack-contrib/mini-css-extract-plugin) - Extract CSS into separate files
-- [`css-minimizer-webpack-plugin`](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/) - Optimize and minimize CSS assets
+- [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin) - Очищает папку с билдом
+- [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) - Копирует файлы в папку с билдом
+- [`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) - Генерирует HTML из шаблона
+- [`mini-css-extract-plugin`](https://github.com/webpack-contrib/mini-css-extract-plugin) - Разделяет CSS по разным файлам
+- [`css-minimizer-webpack-plugin`](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/) - Оптимизация и минификация CSS файлов
 
-### Linters
+<!-- ### Linters
 
 - [`eslint`](https://github.com/eslint/eslint) - Enforce styleguide across application
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Implement prettier rules
   - - [`prettier`](https://github.com/prettier/prettier) - Dependency for `prettier-webpack-plugin` plugin
 - [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Throw exceptions for import/export in webpack -->
 
-## License
+## Лицензия
 
-This project is open source and available under the [MIT License](LICENSE).
+Проект с открытым исходным кодом и доступен под лицензией [MIT License](LICENSE).
