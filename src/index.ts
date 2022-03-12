@@ -1,7 +1,8 @@
-// Test import of a JavaScript module
-import { example } from '@/js/example'
+// Test import of a module
+import { example } from './scripts/example'
 
 // Test import of an asset
+// @ts-ignore
 import webpackLogo from '@/images/webpack-logo.svg'
 
 // Test import of styles

@@ -6,20 +6,19 @@
   "author": "Tania Rascia",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "lint": "eslint 'src/**/*.js' || true",
-    "prettify": "prettier --write 'src/**/*.js'"
+    "start:dev": "export NODE_OPTIONS=--openssl-legacy-provider; cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "start:prod": "export NODE_OPTIONS=--openssl-legacy-provider; cross-env NODE_ENV=production webpack serve --open --config config/webpack.prod.js",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider; cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "test": "mocha",
+    "lint": "eslint 'src/**/*.ts' || true",
+    "prettify": "prettier --write 'src/**/*.ts'"
   },
-  "keywords": [
-    "webpack",
-    "webpack 5",
-    "webpack boilerplate"
-  ],
+  "keywords": [],
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/preset-env": "^7.15.8",
+    "@types/three": "^0.138.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^9.0.1",
@@ -32,12 +31,17 @@
     "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.3.2",
     "mini-css-extract-plugin": "^2.4.2",
-    "sass": "^1.43.5",
+    "mocha": "^9.2.2",
     "postcss-loader": "^6.2.0",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.4.1",
+    "sass": "^1.43.5",
     "sass-loader": "^12.2.0",
+    "shader-loader": "^1.3.1",
     "style-loader": "^3.3.0",
+    "ts-loader": "^9.2.8",
+    "ts-shader-loader": "^1.0.6",
+    "typescript": "^4.6.2",
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^4.3.1",
@@ -46,5 +50,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:taniarascia/webpack-boilerplate"
+  },
+  "dependencies": {
+    "three": "^0.138.3"
   }
 }
