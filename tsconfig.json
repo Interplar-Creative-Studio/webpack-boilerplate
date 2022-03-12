@@ -12,5 +12,6 @@
     },
     "skipLibCheck": true
   },
+  "exclude": ["./tests/", "./node_modules/", "./dist/"],
   "files": ["src/index.ts"]
 }
