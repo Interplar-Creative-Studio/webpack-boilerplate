@@ -100,7 +100,7 @@ tests/ - директория с тестами
 - [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Упрощенное создание конфигов для разработки/продакшена
 - [`cross-env`](https://github.com/kentcdodds/cross-env) - Кросс-платформенная конфигурация
 
-### Загрузчики
+### ***Загрузчики***
 
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Загружает SCSS и компилирует в CSS
   - [`sass`](https://www.npmjs.com/package/sass) - Node Sass
@@ -118,7 +118,7 @@ tests/ - директория с тестами
 - [`mini-css-extract-plugin`](https://github.com/webpack-contrib/mini-css-extract-plugin) - Разделяет CSS по разным файлам
 - [`css-minimizer-webpack-plugin`](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/) - Оптимизация и минификация CSS файлов
 
-### Linters
+### ***Линтеры***
 
 - [`eslint`](https://github.com/eslint/eslint) - Одинаковое форматирование по всему проекту
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Правила для prettier
