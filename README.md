@@ -1,6 +1,9 @@
 # 📦 Шаблон Webpack5
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![NodeJS](https://img.shields.io/badge/NodeJS-v17.6.0-success)](https://nodejs.org/en/)
+[![Webpack](https://img.shields.io/badge/Webpack-v5.58.2-informational)](https://webpack.js.org/)
+
 
 Шаблон webpack 5-ой версии с использованием таких технологий как:
 - TypeScript
@@ -42,7 +45,7 @@ npm run build:dev
 ```
 Билд **с** прохождением тестов
 
-> Важно: Установите [http-server](https://www.npmjs.com/package/http-server) как глобальную зависимость, чтобы сделать небольшой сервер.
+> Важно: Установите [http-server](https://www.npmjs.com/package/http-server) как глобальную зависимость, чтобы запустить небольшой сервер.
 
 ```bash
 npm i -g http-server
@@ -75,7 +78,7 @@ npm run prettify
 ```
 
 ## `Структура проекта`
-```
+```bash
 config/ - конфиги Webpack
 public/ - всякие robot.txt и т.д пихаем сюда
 src/ - основная директория
@@ -97,22 +100,16 @@ tests/ - директория с тестами
 - [`webpack-merge`](https://github.com/survivejs/webpack-merge) - Упрощенное создание конфигов для разработки/продакшена
 - [`cross-env`](https://github.com/kentcdodds/cross-env) - Кросс-платформенная конфигурация
 
-<!-- ### Babel
-
-- [`@babel/core`](https://www.npmjs.com/package/@babel/core) - Transpile ES6+ to backwards compatible JavaScript
-- [`@babel/plugin-proposal-class-properties`](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) - Use properties directly on a class (an example Babel config)
-- [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel -->
-
-<!-- ### Loaders
+### Загрузчики
 
 - [`babel-loader`](https://webpack.js.org/loaders/babel-loader/) - Transpile files with Babel and webpack
-- [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Load SCSS and compile to CSS
+- [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Загружает SCSS и компилирует в CSS
   - [`sass`](https://www.npmjs.com/package/sass) - Node Sass
-- [`postcss-loader`](https://webpack.js.org/loaders/postcss-loader/) - Process CSS with PostCSS
-  - [`postcss-preset-env`](https://www.npmjs.com/package/postcss-preset-env) - Sensible defaults for PostCSS
-- [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolve CSS imports
-- [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
--->
+- [`postcss-loader`](https://webpack.js.org/loaders/postcss-loader/) - Обрабатывает CSS с PostCSS
+  - [`postcss-preset-env`](https://www.npmjs.com/package/postcss-preset-env) - Значения по умолчанию для PostCSS
+- [`css-loader`](https://webpack.js.org/loaders/css-loader/) - CSS импорты
+- [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Внедрение CSS в DOM
+- [`ts-loader`](https://www.npmjs.com/package/ts-loader) - Загрузка и компиляция TypeScript
 
 ### ***Плагины***
 
@@ -122,12 +119,12 @@ tests/ - директория с тестами
 - [`mini-css-extract-plugin`](https://github.com/webpack-contrib/mini-css-extract-plugin) - Разделяет CSS по разным файлам
 - [`css-minimizer-webpack-plugin`](https://webpack.js.org/plugins/css-minimizer-webpack-plugin/) - Оптимизация и минификация CSS файлов
 
-<!-- ### Linters
+### Linters
 
-- [`eslint`](https://github.com/eslint/eslint) - Enforce styleguide across application
-- [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Implement prettier rules
-  - - [`prettier`](https://github.com/prettier/prettier) - Dependency for `prettier-webpack-plugin` plugin
-- [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Throw exceptions for import/export in webpack -->
+- [`eslint`](https://github.com/eslint/eslint) - Одинаковое форматирование по всему проекту
+- [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Правила для prettier
+  - - [`prettier`](https://github.com/prettier/prettier) - Зависимость для плагина `prettier-webpack-plugin`
+- [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Исключения для импорта/экспорта в webpack 
 
 ## `Лицензия`
 
