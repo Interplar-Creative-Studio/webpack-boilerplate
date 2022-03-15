@@ -18,7 +18,7 @@ npm i
 
 ## `Использование`
 
-### Локальный сервер
+### ***Локальный сервер***
 
 ```bash
 npm run start:dev
@@ -30,7 +30,7 @@ npm run start:prod
 ```
 Сам **не запускается**, надо самому. Настройки из конфига для продакшена.
 
-### Билд
+### ***Билд***
 
 ```bash
 npm run build:dev
@@ -54,9 +54,42 @@ npm i -g http-server
 cd dist && http-server
 ```
 
+### ***Прочие команды***
+
+Просто запускает тесты
+
+```bash
+npm run test
+```
+
+А вот тут работает линтер
+
+```bash
+npm run lint
+```
+
+Делает наш код _красивым_
+
+```bash
+npm run prettify
+```
+
+## `Структура проекта`
+```
+config/ - конфиги Webpack
+public/ - всякие robot.txt и т.д пихаем сюда
+src/ - основная директория
+├── fonts/ - среда обитания шрифтов
+├── images/ - картиночки
+├── scripts/ - а тут живут TypeScript файлы
+├── styles/ - куда же без стилей
+└── template.html/ - шаблон HTML-документа
+tests/ - директория с тестами
+```
+
 ## `Зависимости`
 
-### webpack
+### ***webpack***
 
 - [`webpack`](https://github.com/webpack/webpack) - Упаковщик
 - [`webpack-cli`](https://github.com/webpack/webpack-cli) - Коммандный интерфейс для Webpack
@@ -81,7 +114,7 @@ cd dist && http-server
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM
 -->
 
-### Плагины
+### ***Плагины***
 
 - [`clean-webpack-plugin`](https://github.com/johnagan/clean-webpack-plugin) - Очищает папку с билдом
 - [`copy-webpack-plugin`](https://github.com/webpack-contrib/copy-webpack-plugin) - Копирует файлы в папку с билдом
