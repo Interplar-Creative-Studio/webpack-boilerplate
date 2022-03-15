@@ -102,7 +102,6 @@ tests/ - директория с тестами
 
 ### Загрузчики
 
-- [`babel-loader`](https://webpack.js.org/loaders/babel-loader/) - Transpile files with Babel and webpack
 - [`sass-loader`](https://webpack.js.org/loaders/sass-loader/) - Загружает SCSS и компилирует в CSS
   - [`sass`](https://www.npmjs.com/package/sass) - Node Sass
 - [`postcss-loader`](https://webpack.js.org/loaders/postcss-loader/) - Обрабатывает CSS с PostCSS
