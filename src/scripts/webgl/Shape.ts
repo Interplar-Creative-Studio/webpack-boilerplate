@@ -7,7 +7,9 @@
 
 import * as THREE from 'three'
 
+// @ts-ignore
 import vertShader from './glsl/torus.vs'
+// @ts-ignore
 import fragShader from './glsl/torus.fs'
 // @ts-ignore
 import { randInt } from 'Utils'
