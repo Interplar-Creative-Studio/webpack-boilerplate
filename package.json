@@ -10,7 +10,7 @@
     "start:prod": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack serve --open --config config/webpack.prod.js",
     "build:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --config config/webpack.prod.js",
     "build:prod": "npm run test && cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --config config/webpack.prod.js",
-    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'",
+    "test": "mocha -r ts-node/register 'tests/**/*.ts'",
     "lint": "eslint 'src/**/*.ts' || true",
     "prettify": "prettier --write 'src/**/*.ts'"
   },
