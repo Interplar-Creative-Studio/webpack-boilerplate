@@ -62,10 +62,10 @@ npm run watch
 npm run test
 ```
 
-А вот тут работает линтер
+<!-- А вот тут работает линтер
 ```bash
 npm run lint
-```
+``` -->
 
 Делает наш код _красивым_
 ```bash
@@ -118,7 +118,7 @@ tests/ - директория с тестами
 - [`eslint`](https://github.com/eslint/eslint) - Одинаковое форматирование по всему проекту
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Правила для prettier
   - - [`prettier`](https://github.com/prettier/prettier) - Зависимость для плагина `prettier-webpack-plugin`
-- [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Исключения для импорта/экспорта в webpack 
+<!-- - [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Исключения для импорта/экспорта в webpack  -->
 
 ## `Лицензия`
 

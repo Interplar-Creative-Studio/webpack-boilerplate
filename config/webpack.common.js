@@ -32,6 +32,14 @@ module.exports = {
           },
           noErrorOnMissing: true,
         },
+        // {
+        //   from: [paths.src + '/images'],
+        //   to: 'assets',
+        //   globOptions: {
+        //     ignore: ['*.DS_Store'],
+        //   },
+        //   noErrorOnMissing: true,
+        // },
       ],
     }),
 
