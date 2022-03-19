@@ -35,44 +35,34 @@ npm run start:prod
 
 ### ***Билд***
 
-```bash
-npm run build:dev
-```
 Билд **без** прохождения тестов
-
 ```bash
 npm run build:dev
 ```
+
 Билд **с** прохождением тестов
-
-> Важно: Установите [http-server](https://www.npmjs.com/package/http-server) как глобальную зависимость, чтобы запустить небольшой сервер.
-
 ```bash
-npm i -g http-server
+npm run build:dev
 ```
 
-Теперь вы можете посмотреть свои труды из папки `dist`. Для этого перейдите в папку с билдом и запустите сервер
-
+Теперь вы можете посмотреть свои труды из папки `dist`
 ```bash
-cd dist && http-server
+npm run serve
 ```
 
 ### ***Прочие команды***
 
 Просто запускает тесты
-
 ```bash
 npm run test
 ```
 
 А вот тут работает линтер
-
 ```bash
 npm run lint
 ```
 
 Делает наш код _красивым_
-
 ```bash
 npm run prettify
 ```

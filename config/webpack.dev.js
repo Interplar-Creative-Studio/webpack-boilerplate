@@ -18,6 +18,11 @@ module.exports = merge(common, {
     port: 8080,
   },
 
+  watch: true,
+  watchOptions: {
+    ignored: '**/node_modules/',
+  },
+
   module: {
     rules: [
       // Styles: Inject CSS into the head with source maps

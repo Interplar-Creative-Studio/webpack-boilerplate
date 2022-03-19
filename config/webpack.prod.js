@@ -7,12 +7,20 @@ const common = require('./webpack.common')
 
 module.exports = merge(common, {
   mode: 'production',
+
   devtool: false,
+
   output: {
     path: paths.build,
     publicPath: '/',
     filename: 'js/[name].[contenthash].bundle.js',
   },
+
+  watch: true,
+  watchOptions: {
+    ignored: '**/node_modules/',
+  },
+
   module: {
     rules: [
       {

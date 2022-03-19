@@ -7,11 +7,13 @@
   "license": "MIT",
   "scripts": {
     "start:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "start:prod": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack serve --open --config config/webpack.prod.js",
+    "start:prod": "npm run test && cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --watch serve --open --hot --config config/webpack.prod.js",
     "build:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --config config/webpack.prod.js",
     "build:prod": "npm run test && cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --config config/webpack.prod.js",
+    "watch": "NODE_OPTIONS=--openssl-legacy-provider NODE_END=development webpack --watch --progress --config config/webpack.dev.js",
     "test": "mocha -r ts-node/register 'tests/**/*.ts'",
     "lint": "eslint 'src/**/*.ts' || true",
+    "serve": "npx http-server ./dist",
     "prettify": "prettier --write 'src/**/*.ts'"
   },
   "keywords": [],
