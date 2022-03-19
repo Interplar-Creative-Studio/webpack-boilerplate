@@ -23,15 +23,15 @@ npm i
 
 ### ***Локальный сервер***
 
+**Запускается сам**, настройки из конфига для разработки.
 ```bash
 npm run start:dev
 ```
-**Запускается сам**, настройки из конфига для разработки.
 
+Сам **не запускается**, надо самому. Настройки из конфига для продакшена.
 ```bash
 npm run start:prod
 ```
-Сам **не запускается**, надо самому. Настройки из конфига для продакшена.
 
 ### ***Билд***
 
@@ -52,15 +52,20 @@ npm run serve
 
 ### ***Прочие команды***
 
+Просмотр файлов
+```bash
+npm run watch
+```
+
 Просто запускает тесты
 ```bash
 npm run test
 ```
 
-А вот тут работает линтер
+<!-- А вот тут работает линтер
 ```bash
 npm run lint
-```
+``` -->
 
 Делает наш код _красивым_
 ```bash
@@ -113,7 +118,7 @@ tests/ - директория с тестами
 - [`eslint`](https://github.com/eslint/eslint) - Одинаковое форматирование по всему проекту
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Правила для prettier
   - - [`prettier`](https://github.com/prettier/prettier) - Зависимость для плагина `prettier-webpack-plugin`
-- [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Исключения для импорта/экспорта в webpack 
+<!-- - [`eslint-import-resolver-webpack`](https://github.com/benmosher/eslint-plugin-import/tree/master/resolvers/webpack) - Исключения для импорта/экспорта в webpack  -->
 
 ## `Лицензия`
 
