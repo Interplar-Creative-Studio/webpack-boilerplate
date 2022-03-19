@@ -16,6 +16,20 @@ module.exports = {
     publicPath: '/',
   },
 
+  // Spin up a server for quick development
+  devServer: {
+    historyApiFallback: true,
+    open: true,
+    compress: true,
+    hot: true,
+    port: 8080,
+    watchFiles: 'src/**/*',
+
+    client: {
+      progress: true,
+    },
+  },
+
   // Customize the webpack build process
   plugins: [
     // Removes/cleans build folders and unused assets when rebuilding
