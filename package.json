@@ -10,6 +10,7 @@
     "start:prod": "npm run test && cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack serve --open --hot --config config/webpack.prod.js",
     "build:dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --config config/webpack.prod.js",
     "build:prod": "npm run test && cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=production webpack --config config/webpack.prod.js",
+    "scripts": "npm run test && cross-env NODE_OPTIONS=--openssl-legacy-provider NODE_ENV=development webpack --config config/webpack.special.js",
     "watch": "NODE_OPTIONS=--openssl-legacy-provider NODE_END=development webpack --watch --progress --config config/webpack.dev.js",
     "test": "mocha -r ts-node/register 'tests/**/*.ts'",
     "serve": "npx http-server ./dist",
