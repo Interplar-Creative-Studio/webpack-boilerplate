@@ -6,7 +6,7 @@
 
 import View from './webgl/View'
 
-import '../styles/index.scss'
+// import '../styles/index.scss'
 
 class App {
   private view: View
